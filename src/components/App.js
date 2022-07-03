@@ -29,10 +29,8 @@ const App = () => {
   function charCout(str){
     let c=0;
     for(var i=0;i<str.length;i++){
-      if(str[i]!==" "){
         c++;
-      }
-      setCharcount(c);
+    setCharcount(c);
     }
     let maxNum = (e) => {
       setMaxlen(e.target.value);
