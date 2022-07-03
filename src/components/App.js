@@ -4,7 +4,7 @@ const App = () => {
   const [count,setCount] = useState(0);
   const [charcount,setCharcount] =useState(0);
   const [maxlen, setMaxlen]=useState(50);
-  const [size,setSize]=useState(0);
+  const [size,setSize]=useState(16);
 
   let change = (e) =>{
     wordcount(e.target.value);
@@ -45,7 +45,7 @@ const App = () => {
     <div id="main">
       <div >  
         <label>Font Size Picker</label>
-        <input id='fontSize-input' type="range" min="16" max="32" onChange={sizeChanger}></input>
+        <input id='fontSize-input' defaultValue="16" type="range" min="16" max="32" onChange={sizeChanger}></input>
         <label>Word limit input</label>
         <input defaultValue="50" type="number" onChange={maxNum} id="char-limit-input"></input>
         <br/>
